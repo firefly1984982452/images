@@ -43,7 +43,7 @@
                 <p class="date">{{item.date}}</p>
                 <span v-if="item.imgs.length>1">+{{item.imgs.length}}</span>
                 <div class="image-content" :style="'grid-template-columns: repeat('+(item.imgs.length > 5 ? 5 : item.imgs.length)+', 1fr);'">
-                  <img :src="img" v-for="img in item.imgs" :key="img" :alt="item.content" :title="item.content" :onerror="onErrorImg(errorImgSrc)">
+                  <img v-for="img in item.imgs" :key="img" :data-src="img" src="https://img.alicdn.com/tps/i3/T1QYOyXqRaXXaY1rfd-32-32.gif" :onerror="onErrorImg(errorImgSrc)">
                 </div>
               </div>
               <div class="img-box" v-if="item.type==='video'">
@@ -58,6 +58,22 @@
     </main>
   </div>
   <script src="./js/blog.js"></script>
+  <script>
+    const io = new IntersectionObserver(callback);
+    function callback(entries) {
+      entries.forEach((item) => {
+        if (item.isIntersecting) {
+          item.target.src = item.target.dataset.src;
+          io.unobserve(item.target);
+        }
+      });
+    }
+
+    let imgs = document.querySelectorAll('[data-src]');
+    imgs.forEach((item) => {
+      io.observe(item);
+    });
+  </script>
 </body>
 
 </html>

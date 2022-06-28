@@ -4,10 +4,6 @@
     width: 100% !important;
     margin: 0 !important;
   }
-  ul {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-
   ul li {
     width: 100% !important;
   }
@@ -63,7 +59,7 @@ ul {
   height: 100%;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, 240px);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   place-content: center;
   overflow: hidden;
 }
