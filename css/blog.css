@@ -9,7 +9,7 @@ body {
   height: 100%;
   background-color: #f3f5f7;
 }
-
+/* 移动端兼容 */
 @media only screen and (min-width: 100px) and (max-width: 700px) {
   .month {
     width: 100% !important;
@@ -23,8 +23,7 @@ body {
     width: 100% !important;
   }
 }
-#app {
-}
+/* 目录导航---start */
 nav {
   position: fixed;
   left: 0;
@@ -38,10 +37,14 @@ nav a {
   display: flex;
   line-height: 40px;
 }
+/* 目录导航---end */
+
+/* 内容 */
 main {
   display: flex;
   flex-direction: column;
 }
+/* 标题---start */
 header {
   background: rgba(255, 255, 255, 1);
   padding: 10px 0;
@@ -62,6 +65,9 @@ header h2 {
   flex: 1;
   text-align: center;
 }
+/* 标题---end */
+
+/* 月内容 */
 .month {
   flex: 1;
   width: auto;
@@ -69,6 +75,7 @@ header h2 {
   margin: 0 40px;
   padding: 10px 0;
 }
+/* 月标题---start */
 .title {
   padding: 10px 0;
   box-shadow: 0px 5px 20px rgba(27, 141, 235, 0.1);
@@ -78,11 +85,12 @@ header h2 {
   margin-bottom: 10px;
   flex-direction: column;
 }
-h1 {
-}
 h5 {
   color: #333;
 }
+/* 月标题---end */
+
+/* 每月内容 */
 ul {
   width: 100%;
   height: 100%;
@@ -91,10 +99,11 @@ ul {
   grid-template-columns: repeat(auto-fit, 240px);
   overflow: hidden;
 }
+/* 单个卡片 */
 ul li {
   break-inside: avoid;
   box-sizing: border-box;
-  min-height: 270px;
+  min-height: 300px;
   height: auto;
   border: 1px solid #eee;
   padding: 20px;
@@ -102,7 +111,10 @@ ul li {
   background: linear-gradient(225deg, #e5f3ff 0%, #ffffff 18%, #ffffff 100%);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
   float: left;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 100px;
 }
+/* 单日内容文字 */
 ul li p {
   display: -webkit-box;
   overflow: hidden;
@@ -112,6 +124,7 @@ ul li p {
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
+/* 图片样式 */
 .img-box {
   position: relative;
   width: 100%;
@@ -128,6 +141,7 @@ ul li p {
   left: 0;
   text-align: center;
   border-radius: 0 0 5px 5px;
+  z-index: 1;
 }
 span,
 b {
@@ -149,7 +163,8 @@ b {
   top: 50%;
   transform: translateY(-50%);
 }
-img {
+img,
+video {
   width: 100%;
   height: 100%;
   border-radius: 5px;

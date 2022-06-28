@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="./js/vue.js"></script>
+  <script src="./js/heic2any.min.js"></script>
   <script type="text/javascript">
     //回调函数
     function train(data) {
@@ -36,11 +37,15 @@
           <ul>
             <li v-for="(item,index) in x.children" :key="index">
               <p class="content" :title="item.content">{{item.content}}</p>
-              <div class="img-box">
+              <div class="img-box" v-if="item.type==='img'">
                 <p class="date">{{item.date}}</p>
                 <span v-if="item.imgs.length>1">+{{item.imgs.length-1}}</span>
                 <img :src="item.img" :alt="item.content" :title="item.content" :onerror="onErrorImg(errorImgSrc)">
                 <b v-if="item.imgs.length>1" @click="nextImg(y,index)">></b>
+              </div>
+              <div class="img-box" v-if="item.type==='video'">
+                <p class="date">{{item.date}}</p>
+                <video controls muted :poster="videoSrc" :src="item.video"></video>
               </div>
             </li>
           </ul>
