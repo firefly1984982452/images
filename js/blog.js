@@ -4,6 +4,7 @@ var app = new Vue({
     showNav: false,
     list: [],
     title: '2022博客日记',
+    errorImgSrc: './img/img-default.png',
   },
   methods: {
     showMenu() {
@@ -16,12 +17,15 @@ var app = new Vue({
       item.img = item.imgs[item.currentImgIndex];
       this.$forceUpdate();
     },
+    onErrorImg: function (imgSrc) {
+      return 'this.οnerrοr=null;this.src=' + '"' + imgSrc + '";';
+    },
   },
   mounted: function () {
     this.$nextTick(function () {
       this.list = window.list.reverse();
       this.list = this.list.map((v) => {
-        v.children = v.children.map((i) => {
+        v.children = v?.children?.map((i) => {
           i.img = i.imgs[0];
           i.currentImgIndex = 0;
           return i;

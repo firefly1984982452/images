@@ -39,11 +39,10 @@
               <div class="img-box">
                 <p class="date">{{item.date}}</p>
                 <span v-if="item.imgs.length>1">+{{item.imgs.length-1}}</span>
-                <img :src="item.img" alt="">
+                <img :src="item.img" :alt="item.content" :title="item.content" :onerror="onErrorImg(errorImgSrc)">
                 <b v-if="item.imgs.length>1" @click="nextImg(y,index)">></b>
               </div>
             </li>
-            <div style="clear: both;"></div>
           </ul>
         </div>
       </div>
