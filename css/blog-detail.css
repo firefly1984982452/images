@@ -1,0 +1,39 @@
+/* 内容 */
+main {
+  display: flex;
+  flex-direction: column;
+}
+section {
+  background-color: #fefefe;
+  margin: 10px 0;
+  padding: 20px;
+}
+p {
+  margin: 0 0 10px 0;
+  padding: 10px 20px;
+}
+.img-box {
+  width: 100%;
+  display: grid;
+  margin: 0 auto;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, 250px);
+  place-content: center;
+}
+
+.img-box img {
+  width: 250px;
+  height: auto;
+  min-height: 250px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  object-fit: cover;
+}
+.video-box {
+  display: flex;
+}
+video {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}

@@ -1,164 +1,34 @@
 train([
   {
-    "date": "2022年1月",
+    "date": "2022-01",
     "content": "",
   },
   {
-    "date": "2022年2月",
+    "date": "2022-02",
     "content": "",
   },
   {
-    "date": "2022年3月",
+    "date": "2022-03",
     "content": "",
   },
   {
-    "date": "2022年4月",
+    "date": "2022-04",
     "content": "",
   },
   {
-    "date": "2022年5月",
-    "content": "平凡的5月",
-    "children": [
-      {
-        "date": "2022年5月1日",
-        "content": "做了个简单的电脑支架",
-        "imgs": [
-          "https://s1.ax1x.com/2022/06/03/XUa6XT.jpg",
-          "https://s1.ax1x.com/2022/06/03/XUaycV.jpg"
-        ]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "政府发了好多物资呀",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUao1x.jpg"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "我这里放了好多的米呀",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUaI91.jpg"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "养生壶里煮点姜茶喝",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUahN9.jpg"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "可爱的女儿",
-        "imgs": [
-          "https://s1.ax1x.com/2022/06/03/XUwPR1.png",
-          "https://s1.ax1x.com/2022/06/03/XUwkM6.png"
-        ]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "女儿要跳舞",
-        "imgs": [
-          "https://s1.ax1x.com/2022/06/03/XUwAsK.png",
-          "https://s1.ax1x.com/2022/06/03/XUw9i9.png",
-          "https://s1.ax1x.com/2022/06/03/XUwCGR.png",
-          "https://s1.ax1x.com/2022/06/03/XUwYdg.png",
-          "https://s1.ax1x.com/2022/06/03/XUwaJs.png",
-          "https://s1.ax1x.com/2022/06/03/XUwdWn.png",
-          "https://s1.ax1x.com/2022/06/03/XUwUij.png"
-        ]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "业华捡到了爱心形状的图片",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUw8L8.jpg"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "刚洗完头的发质",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUwJeS.jpg"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "只剩下辣椒和鸡蛋了",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUwtoQ.jpg"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "不好看的自拍来2张",
-        "imgs": [
-          "https://s1.ax1x.com/2022/06/03/XUwwzq.jpg",
-          "https://s1.ax1x.com/2022/06/03/XUwBQ0.jpg"
-        ]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "好吃的辣椒炒鸡肉 ",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUwDyV.jpg"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "难吃的西红柿炒蛋",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUwrLT.jpg"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "蚊子太嚣张了，咬我这么多口",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUwyeU.jpg"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "赶快找小伙伴借蚊香啦",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUw6wF.png"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "老公给我买的零食",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUwco4.jpg"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "不想炒菜，随便吃吃蛋炒饭吧",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUw2FJ.jpg"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "看上去清淡，其实最后加了辣椒吃的",
-        "imgs": [
-          "https://s1.ax1x.com/2022/06/03/XUwRY9.jpg",
-          "https://s1.ax1x.com/2022/06/03/XUwWWR.jpg"
-        ]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "高热量晚餐",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUwhS1.jpg"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "第一次学会做馒头",
-        "imgs": [
-          "https://s1.ax1x.com/2022/06/03/XUw5y6.jpg",
-          "https://s1.ax1x.com/2022/06/03/XUwIOK.jpg",
-          "https://s1.ax1x.com/2022/06/03/XUwTeO.jpg"
-        ]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "test",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUw8L8.jpg"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "test",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUw8L8.jpg"]
-      },
-      {
-        "date": "2022年5月2日",
-        "content": "test",
-        "imgs": ["https://s1.ax1x.com/2022/06/03/XUw8L8.jpg"]
-      }
-    ]
+    "date": "2022-05",
+    "content": "",
   },
   {
     "date": "2022-06",
     "content": "上班的6月",
     "children": [
+      {
+        "date": "2022-06-01",
+        "content": "",
+        "type": "video",
+        "video": "./2022/6/7.MP4"
+      },
       {
         "date": "2022-06-01",
         "content": "若华拿着我婚礼用的发饰打扮自己，笑得可开心了。",
@@ -327,7 +197,6 @@ train([
         "imgs": [
           "./2022/6/IMG_1699.PNG",
           "./2022/6/IMG_1700.PNG",
-
         ]
       },
       {
@@ -339,10 +208,6 @@ train([
           "./2022/6/IMG_1708.HEIC",
           "./2022/6/IMG_1716.HEIC",
           "./2022/6/IMG_1721.HEIC",
-          "./2022/6/IMG_1723.PNG",
-          "./2022/6/IMG_1724.PNG",
-          "./2022/6/IMG_1725.PNG",
-          "./2022/6/IMG_1726.PNG",
           "./2022/6/IMG_1727.PNG",
           "./2022/6/IMG_1728.PNG",
           "./2022/6/IMG_1729.PNG",
@@ -400,21 +265,34 @@ train([
           "./2022/6/IMG_1674.JPG",
           "./2022/6/IMG_1675.JPG",
           "./2022/6/IMG_1677.JPG",
+        ]
+      },
+
+      {
+        "date": "2022-06-24",
+        "content": "",
+        "imgs": [
           "./2022/6/IMG_1680.JPG",
           "./2022/6/IMG_1681.JPG",
+        ]
+      },
+      {
+        "date": "2022-06-24",
+        "content": "",
+        "imgs": [
           "./2022/6/IMG_1683.JPG",
           "./2022/6/IMG_1684.JPG",
-          "./2022/6/IMG_1687.JPG",
+        ]
+      },
+      {
+        "date": "2022-06-25",
+        "content": "",
+        "imgs": [
           "./2022/6/IMG_1688.JPG",
           "./2022/6/IMG_1689.JPG",
+          "./2022/6/IMG_1687.JPG",
           "./2022/6/IMG_1690.JPG",
           "./2022/6/IMG_1691.JPG",
-          "./2022/6/IMG_1693.JPG",
-          "./2022/6/IMG_1701.JPG",
-          "./2022/6/IMG_1702.JPG",
-          "./2022/6/IMG_1706.JPG",
-          "./2022/6/IMG_1710.JPG",
-          "./2022/6/7.MP4",
         ]
       },
       {
@@ -423,6 +301,40 @@ train([
         "type": "video",
         "video": "./2022/6/23.MP4"
       },
+      {
+        "date": "2022-06-26",
+        "content": "",
+        "imgs": [
+          "./2022/6/IMG_1710.JPG"
+        ]
+      },
+      {
+        "date": "2022-06-26",
+        "content": "",
+        "imgs": [
+          "./2022/6/IMG_1693.JPG",
+        ]
+      },
+      {
+        "date": "2022-06-26",
+        "content": "",
+        "imgs": [
+          "./2022/6/IMG_1701.JPG",
+          "./2022/6/IMG_1702.JPG",
+          "./2022/6/IMG_1706.JPG",
+        ]
+      },
+      {
+        "date": "2022-06-26",
+        "content": "",
+        "imgs": [
+          "./2022/6/IMG_1723.PNG",
+          "./2022/6/IMG_1724.PNG",
+          "./2022/6/IMG_1725.PNG",
+          "./2022/6/IMG_1726.PNG",
+        ]
+      },
+
     ]
   }
 ])

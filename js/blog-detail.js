@@ -1,19 +1,18 @@
 var app = new Vue({
-  el: '#app',
+  el: '#detail',
   data: {
-    showNav: false,
-    list: [],
-    title: '2022 test',
     errorImgSrc: './img/img-default.png',
     videoSrc: './img/video-default.png',
-    menuImgURL: './img/menu.png',
+    backImgURL: './img/back.png',
+    item: {},
+    hasHEIC: false,
   },
   methods: {
-    showMenu() {
-      this.showNav = !this.showNav;
-    },
     onErrorImg(imgSrc) {
       return 'this.οnerrοr=null;this.src=' + '"' + imgSrc + '";';
+    },
+    backFn() {
+      history.back();
     },
 
     heic2anyFn(fileURL) {
@@ -42,27 +41,23 @@ var app = new Vue({
           );
       });
     },
-    detailFn(item, index) {
-      window.location.href = 'blog-detail.html?item=' + JSON.stringify(item);
-    },
   },
   mounted: function () {
     this.$nextTick(function () {
-      this.list = window.list.reverse();
-      this.list = this.list.map((v) => {
-        v.children = v?.children?.map((i) => {
-          i.type = i.type === 'video' ? 'video' : 'img';
-          if (i.type === 'img') {
-            if (/.heic$/i.test(i.imgs[0])) {
-              this.heic2anyFn(i.imgs[0]).then((url) => {
-                i.imgs[0] = url;
-                this.$forceUpdate();
-              });
-            }
-          }
-          return i;
-        });
-        return v;
+      const str = window.location.search.substring(1);
+      let param = Object.fromEntries(new URLSearchParams(str));
+      let item = JSON.parse(param.item);
+      this.item = item;
+      this.hasHEIC = this.item.imgs.some((v) => /.heic$/i.test(v));
+      this.item.imgs = this.item.imgs.map((v, index) => {
+        if (/.heic$/i.test(v)) {
+          this.heic2anyFn(v).then((url) => {
+            this.item.imgs[index] = url;
+            this.$forceUpdate();
+          });
+        } else {
+          return v;
+        }
       });
     });
   },

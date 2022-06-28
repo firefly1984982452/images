@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/vue.js"></script>
+  <script src="./js/heic2any.min.js"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/blog-detail.css">
+</head>
+
+<body>
+  <div id="detail">
+    <header>
+      <img @click="backFn" class="menu" :src="backImgURL" alt="" srcset="">
+      <h2>{{item.date}}</h2>
+    </header>
+    <main>
+      <section>{{item.content || '-'}}</section>
+      <p v-if="hasHEIC">当前页面有图片的格式是HEIC，正在拼命解析中……</p>
+      <div class="img-box" v-if="item.type==='img'">
+        <img :src="img" v-for="img in item.imgs" :key="img" :alt="item.content" :title="item.content" :onerror="onErrorImg(errorImgSrc)">
+      </div>
+      <div class="video-box" v-if="item.type==='video'">
+        <video controls muted :poster="videoSrc" :src="item.video"></video>
+      </div>
+    </main>
+  </div>
+  <script src="./js/blog-detail.js"></script>
+</body>
+
+</html>

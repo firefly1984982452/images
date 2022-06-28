@@ -15,6 +15,8 @@
     }
   </script>
   <script src="./js/data.json"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/blog.css">
 </head>
 
@@ -25,7 +27,7 @@
     </nav>
     <main>
       <header>
-        <img @click="showMenu" class="menu" src="https://s1.ax1x.com/2022/03/17/qC38je.png" alt="" srcset="">
+        <img @click="showMenu" class="menu" :src="menuImgURL" alt="" srcset="">
         <h2>{{title}}</h2>
       </header>
       <div class="month">
@@ -35,13 +37,14 @@
             <h5>{{x.content}}</h5>
           </div>
           <ul>
-            <li v-for="(item,index) in x.children" :key="index">
+            <li v-for="(item,index) in x.children" :key="index" @click="detailFn(item,index)">
               <p class="content" :title="item.content">{{item.content}}</p>
               <div class="img-box" v-if="item.type==='img'">
                 <p class="date">{{item.date}}</p>
-                <span v-if="item.imgs.length>1">+{{item.imgs.length-1}}</span>
-                <img :src="item.img" :alt="item.content" :title="item.content" :onerror="onErrorImg(errorImgSrc)">
-                <b v-if="item.imgs.length>1" @click="nextImg(y,index)">></b>
+                <span v-if="item.imgs.length>1">+{{item.imgs.length}}</span>
+                <div class="image-content" :style="'grid-template-columns: repeat('+(item.imgs.length > 5 ? 5 : item.imgs.length)+', 1fr);'">
+                  <img :src="img" v-for="img in item.imgs" :key="img" :alt="item.content" :title="item.content" :onerror="onErrorImg(errorImgSrc)">
+                </div>
               </div>
               <div class="img-box" v-if="item.type==='video'">
                 <p class="date">{{item.date}}</p>
