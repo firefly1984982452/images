@@ -27,7 +27,7 @@ train([
         "date": "2022-06-01",
         "content": "",
         "type": "video",
-        "video": "./2022/6/7.MP4"
+        "videos": ["./2022/6/7.MP4"]
       },
       {
         "date": "2022-06-01",
@@ -97,7 +97,8 @@ train([
       {
         "date": "2022-06-09",
         "content": "",
-        "imgs": [
+        "type": "video",
+        "videos": [
           "./2022/6/sd1654773732_2.MP4",
           "./2022/6/IMG_1549.MOV",
           "./2022/6/IMG_1550.MOV",
@@ -106,7 +107,8 @@ train([
       {
         "date": "2022-06-10",
         "content": "",
-        "imgs": [
+        "type": "video",
+        "videos": [
           "./2022/6/sd1654835074_2.MP4",
         ]
       },
@@ -165,7 +167,8 @@ train([
       {
         "date": "2022-06-18",
         "content": "",
-        "imgs": [
+        "type": "video",
+        "videos": [
           "./2022/6/sd1655513594_2.MP4",
         ]
       },
@@ -299,7 +302,7 @@ train([
         "date": "2022-06-26",
         "content": "",
         "type": "video",
-        "video": "./2022/6/23.MP4"
+        "videos": ["./2022/6/23.MP4"]
       },
       {
         "date": "2022-06-26",

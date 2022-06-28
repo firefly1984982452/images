@@ -48,7 +48,8 @@
               </div>
               <div class="img-box" v-if="item.type==='video'">
                 <p class="date">{{item.date}}</p>
-                <video controls muted :poster="videoSrc" :src="item.video"></video>
+                <span v-if="item.videos.length>1">+{{item.videos.length}}</span>
+                <video controls muted :poster="videoSrc" :src="item.videos[0]"></video>
               </div>
             </li>
           </ul>
