@@ -1,8 +1,9 @@
 var app = new Vue({
-  el: "#app",
+  el: '#app',
   data: {
     showNav: false,
     list: [],
+    title: '2022博客日记',
   },
   methods: {
     showMenu() {
@@ -18,7 +19,7 @@ var app = new Vue({
   },
   mounted: function () {
     this.$nextTick(function () {
-      this.list = window.list;
+      this.list = window.list.reverse();
       this.list = this.list.map((v) => {
         v.children = v.children.map((i) => {
           i.img = i.imgs[0];

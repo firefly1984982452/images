@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="./js/vue.js"></script>
-  <!-- <script src="./js/jquery.min.js"></script> -->
   <script type="text/javascript">
     //回调函数
     function train(data) {
@@ -26,7 +25,7 @@
     <main>
       <header>
         <img @click="showMenu" class="menu" src="https://s1.ax1x.com/2022/03/17/qC38je.png" alt="" srcset="">
-        <h2>2022博客日记</h2>
+        <h2>{{title}}</h2>
       </header>
       <div class="month">
         <div class="content" v-for="(x,y) in list" :key="y">
@@ -40,7 +39,6 @@
               <div class="img-box">
                 <p class="date">{{item.date}}</p>
                 <span v-if="item.imgs.length>1">+{{item.imgs.length-1}}</span>
-                <!-- <img v-for="i in item.imgs" :key="i" :src="i" alt=""> -->
                 <img :src="item.img" alt="">
                 <b v-if="item.imgs.length>1" @click="nextImg(y,index)">></b>
               </div>
